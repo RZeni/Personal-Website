@@ -1,0 +1,226 @@
+<div id="home" class="parallax-container">
+  <div class="section no-pad">
+    <nav class="parallax-nav scroll-nav"
+         role="navigation"
+         ng-class="{'show-scroll-nav': showNav}">
+      <div class="nav-wrapper container">
+        <a id="logo-container-2" href="#" class="brand-logo">
+          <img src="images/rz-logo.png" alt="logo" width="40px">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home" du-smooth-scroll du-scrollspy>Home</a></li>
+          <li><a href="#expertise" du-smooth-scroll du-scrollspy>Expertise</a></li>
+          <li><a href="#work" du-smooth-scroll du-scrollspy>Work</a></li>
+          <li><a href="#contact" du-smooth-scroll du-scrollspy>Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile-2" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#"
+           data-activates="nav-mobile"
+           class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container home-content-container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Robert Zeni</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Ambitious, Creative and Passionate Full-Stack Developer</h5>
+      </div>
+      <div class="row center">
+        <a href="#contact"
+           id="download-button"
+           class="btn-large waves-effect waves-light teal lighten-1">
+          YES, I'M AVAILABLE FOR HIRE
+        </a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div parallax class="parallax">
+    <img src="images/background1.jpg"
+         alt="Unsplashed background img 1">
+  </div>
+</div>
+
+<div id="expertise" class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <h3 class="center">My Expertise</h3>
+      <p class="center">From design to functionality, I've got you covered.</p>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">wb_sunny</i></h2>
+          <h5 class="center">Idea Development</h5>
+
+          <p class="light">
+            I collaborate with clients and peers to nurture and transform ideas into well thought out
+            design specs. After all, that's where the majority of amazing user experiences start.
+          </p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">User Experience Focused</h5>
+
+          <p class="light">
+            I conceptualize and wireframe interfaces focusing on content structure, intuitive UI
+            patterns and simple interactions. I design with both web and native technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">data_usage</i></h2>
+          <h5 class="center">Server Powered</h5>
+
+          <p class="light">
+            I build scalable server solutions
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="work">
+  <div class="parallax-container valign-wrapper small-parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="center">My Work</h3>
+        </div>
+      </div>
+    </div>
+    <div parallax class="parallax">
+      <img src="images/background2.jpg"
+           alt="Unsplashed background img 2">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h5 class="center know-more">Want to know more? <a href="#contact">Contact me</a></h5>
+
+      <div class="row">
+        <div class="col s12 m6 work-description work-left-description">
+          <h5>GMFM</h5>
+
+          <p class="work-description-highlight">Ground Up Design and Development</p>
+
+          <p class="work-description-content">
+            GMFM is the revolutionary Gross Motor Function Measure Application designed for the CanChild
+            research group of McMaster University and is aimed at assisting therapists tasked with
+            tracking and measuring the progress of cerebral palsy for patients
+          </p>
+
+          <a href="https://www.canchild.ca/"
+             class="btn-large waves-effect waves-light teal lighten-1">
+            VISIT WEBSITE
+          </a>
+        </div>
+
+        <div class="col s12 m6 center">
+          <img src="images/GMFM-ALL.png" alt="GMFM App" height="350px"/>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact"
+     class="parallax-container valign-wrapper dark-parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h3 style="margin: 160px 0 120px 0;">Contact Me</h3>
+        <form class="col s12" style="margin-bottom: 60px;">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="subject" type="text" class="validate">
+              <label for="subject">Subject</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="message" type="text" class="validate"></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div parallax class="parallax">
+    <img src="images/background3.jpg"
+         alt="Unsplashed background img 3">
+  </div>
+</div>
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Company Bio</h5>
+        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Settings</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Made by
+      <a class="brown-text text-lighten-3"
+         href="https://www.linkedin.com/in/robert-zeni-80a522106/">
+        Robert Zeni
+      </a>
+    </div>
+  </div>
+</footer>

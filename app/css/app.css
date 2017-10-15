@@ -1,0 +1,78 @@
+.parallax-container {
+  min-height: 560px;
+}
+
+.small-parallax-container{
+  min-height: 300px;
+}
+
+.dark-parallax-container{
+  background: rgba(0, 0, 0, 0.64);
+}
+
+.parallax-container .parallax img{
+  display: block;
+  transform: translate3d(-50%, 362px, 0px);
+}
+
+.home-content-container{
+  padding-top: 170px;
+}
+
+nav a{
+  color: white;
+}
+nav a.active {
+  /*background: #00AC7F;*/
+  /*color: #fff;*/
+  font-weight: 600;
+  color: #38b99c;
+  font-size: 1.1rem;
+  border-bottom: solid 3px;
+}
+.scroll-nav{
+  position: fixed;
+  background: none;
+  /*top: -64px;*/
+  z-index: 1000;
+  transition: all 0.4s ease-in;
+}
+
+.show-scroll-nav{
+  background: rgba(38, 38, 38, 0.85) !important;
+  top:0;
+  transition: all 0.4s ease-in;
+}
+
+.parallax-nav{
+  background: none;
+  box-shadow: none;
+}
+
+
+#expertise{
+  padding-top: 60px;
+}
+
+
+.know-more{
+  margin: 20px 0 60px 0;
+}
+
+.work-description h5{
+    font-weight: 600;
+}
+
+.work-left-description{
+  padding-right: 120px !important;
+}
+
+.work-description-highlight{
+  margin-top: 0;
+  color: #3b9670;
+}
+
+.work-description-content{
+  color: #949494;
+  margin-top: 0;
+}
