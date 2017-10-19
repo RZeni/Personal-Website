@@ -6,6 +6,10 @@
   min-height: 300px;
 }
 
+.medium-dark-parallax-xontainer{
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .dark-parallax-container{
   background: rgba(0, 0, 0, 0.64);
 }
@@ -26,7 +30,10 @@ nav a.active {
   /*background: #00AC7F;*/
   /*color: #fff;*/
   font-weight: 600;
-  color: #38b99c;
+  /*color: #38b99c;*/
+  color: #26a69a;
+  /*color: #47c143;*/
+  /*color: #fb8c00;*/
   font-size: 1.1rem;
   border-bottom: solid 3px;
 }
@@ -49,6 +56,10 @@ nav a.active {
   box-shadow: none;
 }
 
+.name{
+  color: white;
+  font-weight: 600;
+}
 
 #expertise{
   padding-top: 60px;
@@ -75,4 +86,31 @@ nav a.active {
 .work-description-content{
   color: #949494;
   margin-top: 0;
+}
+
+#testimonials{
+  background: #f9f9f9;
+}
+
+.quote{
+  font-size: 1.4rem;
+  color: #727272;
+}
+
+.quote-img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.quote-title{
+  padding-left: 15px;
+  color: #999999;
+}
+
+.separator{
+  height: 1px;
+  border: solid 1px #ffffff;
+  margin-bottom: 35px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(186, 221, 218, 0.75), rgba(0, 0, 0, 0));
 }
