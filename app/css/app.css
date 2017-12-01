@@ -70,12 +70,25 @@ nav a.active {
   margin: 20px 0 60px 0;
 }
 
+.work-content-container{
+  padding-top: 60px;
+}
+
+.work-content-container a{
+  margin-bottom: 50px;
+}
+
 .work-description h5{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .work-left-description{
-  padding-right: 120px !important;
+  padding: 0 120px 0 10px !important;
+}
+
+.work-right-description{
+  float: right !important;
+  padding: 0 10px 0 120px !important;
 }
 
 .work-description-highlight{
@@ -89,6 +102,7 @@ nav a.active {
 }
 
 #testimonials{
+  padding: 60px 0;
   background: #f9f9f9;
 }
 
@@ -109,8 +123,102 @@ nav a.active {
 }
 
 .separator{
+  width: 100%;
   height: 1px;
   border: solid 1px #ffffff;
   margin-bottom: 35px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(186, 221, 218, 0.75), rgba(0, 0, 0, 0));
+}
+
+.connect-links i{
+  width: 25px;
+}
+
+.connect-links li{
+  padding: 5px;
+  font-size: 17px;
+}
+
+.my-picture{
+  border-radius: 170px;
+  height: 250px;
+  width: 244px;
+}
+
+.bio-section{
+  padding: 0 120px 0 55px;
+}
+
+.small-center, .medium-center{
+  text-align: left;
+}
+
+
+@media screen and (max-width: 601px){
+  #index-banner .section {
+    top: 0;
+  }
+
+  .small-center{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 993px){
+  .container {
+    width: 80%;
+  }
+
+  .bio-section{
+    padding: 0 20px 0 70px !important;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .work-left-description, .work-right-description{
+    padding: 0 10px !important;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .medium-center{
+    text-align: center;
+  }
+
+  .bio-section{
+    margin: 20px 0;
+  }
+
+  .bio-section p{
+    max-width: 500px;
+    margin: auto;
+  }
+
+  footer li{
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .bio-section{
+    padding: 0 60px 0 60px !important;
+  }
+}
+
+@media only screen and (min-width: 1500px){
+  .container {
+    width: 70%;
+  }
+
+  .bio-section{
+    padding: 0 100px 0 55px !important;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .bio-section{
+    padding: 0 30px 0 60px;
+  }
 }

@@ -6,7 +6,7 @@
       <div class="nav-wrapper container">
         <a id="logo-container-2" href="#" class="brand-logo">
           <img src="images/rz-logo.png" alt="logo" width="40px">
-	  <span style="font-size: 14px;">Robert Zeni</span>
+	        <span style="font-size: 14px;">Robert Zeni</span>
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#home" du-smooth-scroll du-scrollspy>Home</a></li>
@@ -32,7 +32,7 @@
       <!--<h1 class="header center name">Robert Zeni</h1>-->
       <div class="row center mono">
         <h3 class="header col s12 light">Full-Stack Developer</h3>
-	<h5 class="header col s12 light">Ambitious. Passionate. Creative.</h5>
+	      <h5 class="header col s12 light">Ambitious. Passionate. Creative.</h5>
       </div>
       <div class="row center">
         <a href="#contact" du-smooth-scroll
@@ -41,7 +41,8 @@
           AVAILABLE FOR HIRE
         </a>
       </div>
-      <br><br>
+
+      <br>
 
     </div>
   </div>
@@ -57,57 +58,21 @@
     <!--   Icon Section   -->
     <div class="row">
       <h3 class="center bold">My Expertise</h3>
-      <h5 class="center know-more">From design to functionality, I've got you covered.</h5>
+      <h5 class="center know-more">
+        From design to functionality, I've got you covered.
+      </h5>
 
-      <!--<div class="col s12 m4">
+      <div class="col s12 m4" ng-repeat="expert in expertise track by $index">
         <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">wb_sunny</i></h2>
-          <h5 class="center">Customer Centric Ideation</h5>
+          <h2 class="center teal-text text-lighten-1">
+            <i class="material-icons">{{expert.icon}}</i>
+          </h2>
+          <h5 class="center">{{expert.heading}}</h5>
 
-          <p class="light">
-            I collaborate with clients and peers to nurture and transform ideas into well thought out
-            design specs. After all, that's where the majority of amazing user experiences start.
-          </p>
-        </div>
-      </div>-->
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">group</i></h2>
-          <h5 class="center">User Experience Focused</h5>
-
-          <p class="light">
-             I collaborate with clients and transform ideas into well thought out
-            designs. I conceptualize and wireframe intuitive interfaces focusing on content and user experience.
-          </p>
+          <p class="light">{{expert.blurb}}</p>
         </div>
       </div>
 
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">build</i></h2>
-          <h5 class="center">Build Shit</h5>
-
-          <p class="light">
-	    I build solutions according to proven industry best practices utalizing standards and 
-	    technologies as they align with the project needs.
-          </p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center teal-text text-lighten-1"><i class="material-icons">data_usage</i></h2>
-          <h5 class="center">Cloud Optimized</h5>
-
-          <p class="light">
-	    I engineer robust backend solutions that can withstand today's, as well as the future need for scaleability,
-	    performance and reliability requirements.
-            <!--I build robust server solutions that meet the needs of the user and scales horizontally
-            to accommodate growing levels of traffic on any infrastructure.-->
-          </p>
-        </div>
-      </div>
     </div>
 
   </div>
@@ -128,89 +93,36 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container work-content-container">
     <div class="section">
       <!--<h5 class="center know-more">Want to know more? <a href="#contact">Contact me</a></h5>-->
 
-      <div class="row">
-        <div class="col s12 m6 work-description work-left-description">
-          <h5>GMFM</h5>
+      <div class="row" ng-repeat="job in work track by $index">
+        <div class="col s12 l6 work-description medium-center"
+             ng-class="$odd ? 'work-right-description' : 'work-left-description'">
+          <h5 ng-bind-html="job.name"></h5>
 
-          <p class="work-description-highlight">Cross platform Design, Development and Deployment</p>
+          <p class="work-description-highlight">{{job.contribution}}</p>
 
           <p class="work-description-content">
-            GMFM is the revolutionary Gross Motor Function Measure Application designed for the CanChild
-            research group of McMaster University and is aimed at assisting therapists tasked with
-            tracking and measuring the progress of cerebral palsy for patients
+            {{job.description}}
           </p>
 
-          <a href="https://www.canchild.ca/"
+          <a ng-href="{{job.link}}"
+             target="_blank"
              class="btn-large waves-effect waves-light teal lighten-1">
             VISIT WEBSITE
           </a>
         </div>
 
-        <div class="col s12 m6 center">
-          <img src="images/GMFM-ALL.png"
+        <div class="col s12 l6 center">
+          <img ng-src="{{job.img}}"
                alt="GMFM App"
-               height="350px"
+               width="100%"
                style="margin-bottom: 50px;"/>
         </div>
-       
-        <hr class="separator"/>
 
-        <div class="col s12 m6 center">
-          <img src="images/Groove-ALL.png"
-               alt="Groove Industries"
-               height="350px"
-               style="margin-bottom: 50px; float: right;"/>
-        </div>
-
-        <div class="col s12 m6 work-description work-right-description" style="padding-left: 120px !important;">
-          <h5>Groove Industries</h5>
-
-          <p class="work-description-highlight">Ground Up Design and Development</p>
-
-          <p class="work-description-content">
-            GMFM is the revolutionary Gross Motor Function Measure Application designed for the CanChild
-            research group of McMaster University and is aimed at assisting therapists tasked with
-            tracking and measuring the progress of cerebral palsy for patients
-          </p>
-
-          <a href="https://www.canchild.ca/"
-             class="btn-large waves-effect waves-light teal lighten-1">
-            VISIT WEBSITE
-          </a>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <hr class="separator"/>
-	       
-	<div class="col s12 m6 work-description work-left-description">
-          <h5>GMFM</h5>
-
-          <p class="work-description-highlight">Cross platform Design, Development and Deployment</p>
-
-          <p class="work-description-content">
-            GMFM is the revolutionary Gross Motor Function Measure Application designed for the CanChild
-            research group of McMaster University and is aimed at assisting therapists tasked with
-            tracking and measuring the progress of cerebral palsy for patients
-          </p>
-
-          <a href="https://www.canchild.ca/"
-             class="btn-large waves-effect waves-light teal lighten-1">
-            VISIT WEBSITE
-          </a>
-        </div>
-
-	<div class="col s12 m6 center">
-          <img src="images/GMFM-ALL.png"
-               alt="GMFM App"
-               height="350px"
-               style="margin-bottom: 50px;"/>
-        </div>
+        <hr class="separator" ng-if="!$last"/>
       </div>
 
     </div>
@@ -222,28 +134,38 @@
 
     <!--   Icon Section   -->
     <div class="row">
-      <h3 class="center bold">Testimonials</h3>
+      <h3 class="center bold" style="margin-bottom: 40px;">Testimonials</h3>
 
-      <div class="col s12 m6 center">
-        <p class="quote">"Some Quote from Emma saying how awesome i am :)"</p>
+      <div class="col s12 l6 center">
+        <p class="quote">"Some Quote from Name saying how awesome i am :)"</p>
         <div>
           <img class="quote-img"
-               src="images/sonya.jpg"
+               src="images/me.jpg"
                alt="Sonya Strohm">
-          <span class="quote-title">Sonya Strohm, PM, McMaster CanChild</span>
+          <span class="quote-title">Some Name, Position, Organization</span>
         </div>
       </div>
 
-
-      <div class="col s12 m6 center">
-        <p class="quote">"Some Quote from Emma saying how awesome i am :)"</p>
+      <div class="col s12 l6 center">
+        <p class="quote">"Some Quote from Name saying how awesome i am :)"</p>
         <div>
           <img class="quote-img"
-               src="images/sonya.jpg"
+               src="images/me.jpg"
                alt="Sonya Strohm">
-          <span class="quote-title">Emma Bailey, Product Launch Manager, Groove Industries</span>
+          <span class="quote-title">Some Name, Position, Organization</span>
         </div>
       </div>
+
+      <div class="col s12 center">
+        <p class="quote">"Some Quote from Name saying how awesome i am :)"</p>
+        <div>
+          <img class="quote-img"
+               src="images/me.jpg"
+               alt="Sonya Strohm">
+          <span class="quote-title">Some Name, Position, Organization</span>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -269,7 +191,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
+              <label for="email" data-error="wrong" >Email</label>
             </div>
           </div>
           <div class="row">
@@ -280,7 +202,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="message" type="text" class="validate"></textarea>
+              <textarea id="message" type="text" class="materialize-textarea"></textarea>
               <label for="message">Message</label>
             </div>
           </div>
@@ -294,36 +216,56 @@
     </div>
   </div>
   <div parallax class="parallax">
-    <img src="images/background3.jpg"
+    <img src="images/contact-background-2.jpeg"
          alt="Unsplashed background img 3">
   </div>
 </div>
 
 <footer class="page-footer teal">
   <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
+    <div class="row medium-center">
+      <div class="col s12 l3">
+        <img src="images/me.jpg"
+             class="my-picture"
+             alt="Robert Zeni"/>
+      </div>
+
+      <div class="col s12 l6 bio-section">
         <h5 class="white-text">Bio</h5>
-        <p class="grey-text text-lighten-4">A College graduate seeking flexible full-time employment</p>
+        <p class="grey-text text-lighten-4">
+          Full-stack Software Developer with 5 years of experience designing
+          and building scalable enterprise level solutions in the mHealth and
+          eHealth space. Experience includes working on projects with
+          organizations such as eHealth Ontario, MOHLTC and McMaster University.
+          Currently seeking flexible full-time employment.
+        </p>
       </div>
-      <!--<div class="col l3 s12">
-        <h5 class="white-text">Settings</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
+
+      <div class="col s12 l3">
         <h5 class="white-text">Connect</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
+        <ul class="connect-links">
+          <li><a class="white-text" href="#!">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a></li>
+          <li><a class="white-text" href="#!">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span>Facebook</span>
+          </a></li>
+          <li><a class="white-text" href="#!">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span>Twitter</span>
+          </a></li>
+          <li><a class="white-text" href="#!">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a></li>
+          <li><a class="white-text" href="#!">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a></li>
         </ul>
-      </div>-->
+      </div>
     </div>
   </div>
   <div class="footer-copyright">
